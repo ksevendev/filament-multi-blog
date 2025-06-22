@@ -1,0 +1,62 @@
+Listagem de caminhos de pasta para o volume SISTEMA
+O número de série do volume é F427-FF80
+C:.
+|   composer.json
+|   estrutura.txt
+|   README.md
+|   
++---config
+|       multiblog.php
+|       
++---database
+|   +---migrations
+|   |       2025_06_21_000001_add_site_id_to_posts_table.php
+|   |       2025_06_21_000002_create_multiblog_models_tables.php
+|   |       
+|   \---seeders
+|           CategorySeeder.php
+|           SiteSeeder.php
+|           
+\---src
+    |   Blog.php
+    |   EventServiceProvider.php
+    |   FilamentBlogServiceProvider.php
+    |   SEOMeta.php
+    |   
+    +---Events
+    |       PostPublished.php
+    |       
+    +---Http
+    |   \---Middleware
+    |           DetectSite.php
+    |           
+    +---Listeners
+    |       SendPostNotificationToSubscribers.php
+    |       
+    +---Models
+    |       Author.php
+    |       Category.php
+    |       Comment.php
+    |       Post.php
+    |       Site.php
+    |       Subscriber.php
+    |       Tag.php
+    |       
+    +---Notifications
+    |       NewPostNotification.php
+    |       
+    +---Providers
+    |       MultiBlogServiceProvider.php
+    |       
+    +---Resources
+    |       AuthorResource.php
+    |       CategoryResource.php
+    |       CommentResource.php
+    |       PostResource.php
+    |       SubscriberResource.php
+    |       TagResource.php
+    |       
+    \---Traits
+            HasSiteScope.php
+            MultiblogEnabled.php
+            
