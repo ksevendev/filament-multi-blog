@@ -1,12 +1,12 @@
 {
   "name": "kseven/filament-multiblog",
-  "description": "Extensão do plugin firefly/filament-blog com suporte a site_id (multi-blog por site).",
+  "description": "Firefly/Filament-Blog plugin extension with site_id support (multi-ban by site).",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
       "name": "K'Seven",
-      "email": "you@example.com"
+      "email": "anjsuporte@gmail.com"
     }
   ],
   "require": {
