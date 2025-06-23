@@ -1,6 +1,4 @@
-Listagem de caminhos de pasta para o volume SISTEMA
-O número de série do volume é F427-FF80
-C:.
+.
 |   composer.json
 |   estrutura.txt
 |   README.md
