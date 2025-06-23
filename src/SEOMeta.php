@@ -1,11 +1,12 @@
 <?php
 
-namespace Firefly\FilamentBlog;
+namespace Kseven\FilamentMultiBlog;
 
+use Firefly\FilamentBlog\SEOMeta AS BSSEOMeta;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Support\Collection;
 
-class SEOMeta
+class SEOMeta extends BSSEOMeta
 {
     protected $title;
 

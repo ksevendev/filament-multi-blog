@@ -1,8 +1,9 @@
 <?php
 
-namespace Firefly\FilamentBlog;
+namespace Kseven\FilamentMultiBlog;
 
-use Filament\Contracts\Plugin;
+use Firefly\FilamentBlog\Blog AS Plugin;
+use Kseven\FilamentMultiBlog\Resources;
 use Filament\Panel;
 
 class Blog implements Plugin
@@ -23,11 +24,11 @@ class Blog implements Plugin
             Resources\CategoryResource::class,
             Resources\PostResource::class,
             Resources\TagResource::class,
-            Resources\SeoDetailResource::class,
-            Resources\NewsletterResource::class,
+            //Resources\SeoDetailResource::class,
+            //Resources\NewsletterResource::class,
             Resources\CommentResource::class,
-            Resources\ShareSnippetResource::class,
-            Resources\SettingResource::class,
+            //Resources\ShareSnippetResource::class,
+            //Resources\SettingResource::class,
         ]);
     }
 

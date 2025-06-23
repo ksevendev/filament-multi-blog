@@ -1,7 +1,8 @@
 <?php
 
-namespace Firefly\FilamentBlog;
+namespace Kseven\FilamentMultiBlog;
 
+use Firefly\FilamentBlog\FilamentBlogServiceProvider AS PackageServiceProvider;
 use Firefly\FilamentBlog\Components\Card;
 use Firefly\FilamentBlog\Components\Comment;
 use Firefly\FilamentBlog\Components\FeatureCard;
@@ -14,7 +15,6 @@ use Illuminate\Config\Repository as Config;
 use Illuminate\Support\Facades\Route;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentBlogServiceProvider extends PackageServiceProvider
 {
@@ -59,7 +59,7 @@ class FilamentBlogServiceProvider extends PackageServiceProvider
     public function register()
     {
         Route::bind('post', function ($value) {
-            return \Firefly\FilamentBlog\Models\Post::where('slug', $value)->published()->firstOrFail();
+            return \Kseven\FilamentMultiBlog\Models\Post::where('slug', $value)->published()->firstOrFail();
         });
 
         $this->app->register(EventServiceProvider::class);

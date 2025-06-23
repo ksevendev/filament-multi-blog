@@ -8,6 +8,6 @@ class SiteSeeder extends Seeder
 {
     public function run(): void
     {
-        Site::factory()->create(['name' => 'Site Principal', 'domain' => 'localhost']);
+        Site::factory()->create(['name' => 'Site Main', 'domain' => 'localhost']);
     }
 }

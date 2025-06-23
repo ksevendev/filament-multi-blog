@@ -1,10 +1,10 @@
 <?php
 
-namespace Firefly\FilamentBlog;
+namespace Kseven\FilamentMultiBlog;
 
+use Firefly\FilamentBlog\EventServiceProvider AS ServiceProvider;
 use Firefly\FilamentBlog\Events\BlogPublished;
 use Firefly\FilamentBlog\Listeners\SendBlogPublishedNotification;
-use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
